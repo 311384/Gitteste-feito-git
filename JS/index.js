@@ -25,12 +25,24 @@ function enviarNumeros() {
     var numero2 = document.getElementById("numero2").value;
     var resultado = parseInt(numero1) + parseInt(numero2);    
     document.getElementById("resultado").innerHTML = resultado;
-}
-function MinhaFuncao2(){
+  }
+  function MinhaFuncao1(){
+    var numero1 = document.getElementById("numero1").value;
+    var numero2 = document.getElementById("numero2").value;
+    var resultado = parseInt(numero1) - parseInt(numero2);    
+    document.getElementById("Subtrair").innerHTML = resultado;
+  }
+  function MinhaFuncao2(){
+    var numero1 = document.getElementById("numero1").value;
+    var numero2 = document.getElementById("numero2").value;
+    var resultado = parseInt(numero1) / parseInt(numero2);    
+    document.getElementById("Dividir").innerHTML = resultado;
+  }
+  function MinhaFuncao3(){
   var numero1 = document.getElementById("numero1").value;
   var numero2 = document.getElementById("numero2").value;
-  var resultado = parseInt(numero1) / parseInt(numero2);    
-  document.getElementById("Dividir").innerHTML = resultado;
-}
+  var resultado = parseInt(numero1) * parseInt(numero2);    
+  document.getElementById("Multiplicar").innerHTML = resultado;
+  }
 
 
