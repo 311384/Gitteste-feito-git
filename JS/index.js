@@ -38,11 +38,35 @@ function enviarNumeros() {
     var resultado = parseInt(numero1) / parseInt(numero2);    
     document.getElementById("Dividir").innerHTML = resultado;
   }
+  function MinhaFuncao5(){
+    var numero1 = document.getElementById("numero1").value;
+    var numero2 = document.getElementById("numero2").value;
+    var resultado = parseInt(numero1) % parseInt(numero2);    
+    document.getElementById("Resto").innerHTML = resultado;
+  }
   function MinhaFuncao3(){
   var numero1 = document.getElementById("numero1").value;
   var numero2 = document.getElementById("numero2").value;
   var resultado = parseInt(numero1) * parseInt(numero2);    
   document.getElementById("Multiplicar").innerHTML = resultado;
   }
+  function MinhaFuncao4() {
+    var numero1 = document.getElementById("numero1").value;
+    var resultado = Math.sqrt(Number(numero1));
+    var resultadoElemento = document.getElementById("Raiz Quadrada");
+    if (resultadoElemento) {
+        resultadoElemento.innerHTML = resultado;
+    } else {
+        console.error("Elemento com ID 'Raiz Quadrada' não encontrado.");
+    }
+}
+function MinhaFuncao6() {
+  var numero1 = document.getElementById("numero1").value;
+  var numero2 = document.getElementById("numero2").value;
+  var resultado = parseInt(numero1) ** parseInt(numero2);    
+  document.getElementById("Potência").innerHTML = resultado;
+}
+
+  
 
 
